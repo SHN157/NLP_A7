@@ -65,6 +65,18 @@ The models were evaluated on both validation and test sets using accuracy, loss,
 | Even-Layer   | 0.1795     | **0.9547**    | 0.8887         | 0.32       | 0.64        | 0.4310      |
 | LoRA         | **0.1648** | 0.9253        | **0.9080**     | 0.19       | 0.57        | **0.2393**  |
 
+### Training & Validation Loss Curves
+
+#### Odd-Layer Student
+![Odd-Layer Losses](./odd_layer_t&vlosses.png)
+
+#### Even-Layer Student
+![Even-Layer Losses](./even_layer_t&vlosses.png)
+
+#### LoRA Student
+![LoRA Losses](./Lora_t&vlosses.png)
+
+
 ### Evaluation Summary
 
 Although the LoRA model achieved the highest test accuracy and lowest test loss, it performed poorly on detecting toxic comments, which is the core objective of this task. Both the Odd-Layer and Even-Layer student models showed better F1-scores for the toxic class, indicating stronger performance on minority class detection.
